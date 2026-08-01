@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>Personix.Tracing</PackageId>
+    <AssemblyName>Personix.Tracing</AssemblyName>
+    <RootNamespace>Personix.Tracing</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>Pavel Kudrna</Authors>
+    <Company>Personix</Company>
+    <Product>Personix.Tracing</Product>
+    <Description>Distributed tracing helpers for .NET services. Wraps a single ActivitySource behind a static helper, propagates W3C Trace Context across process boundaries by reading and writing traceparent headers, and registers the source through one DI call.</Description>
+    <Copyright>Copyright (c) 2026 Personix</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/personix-org/Tracing</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/personix-org/Tracing</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>tracing;opentelemetry;activity;distributed-tracing;traceparent;w3c-trace-context;observability</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.10" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.301" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
